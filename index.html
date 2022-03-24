@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="digitron">
+        <h3>Calculator</h3>
+        <input id="result" placeholder="0">
+        <table>
+            <tr>
+                <td><button id="ce" onclick="Clear()">CE</button></td>
+                <td><button id="c" onclick="Clear()">C</button></td>
+                <td><button id="backspace" onclick="backSpace()">←</button></td>
+                <td><button id="modul" onclick="addValue(this)">%</button></td>
+            </tr>
+            <tr>
+                <td><button id="one" onclick="addValue(this)">7</button></td>
+                <td><button id="two" onclick="addValue(this)">8</button></td>
+                <td><button id="three" onclick="addValue(this)">9</button></td>
+                <td><button id="division" onclick="addValue(this)">/</button></td>
+            </tr>
+            <tr>
+                <td><button id="four" onclick="addValue(this)">4</button></td>
+                <td><button id="five" onclick="addValue(this)">5</button></td>
+                <td><button id="six" onclick="addValue(this)">6</button></td>
+                <td><button id="multiplication" onclick="addValue(this)">*</button></td>
+            </tr>
+            <tr>
+                <td><button id="seven" onclick="addValue(this)">1</button></td>
+                <td><button id="eight" onclick="addValue(this)">2</button></td>
+                <td><button id="nine" onclick="addValue(this)">3</button></td>
+                <td><button id="subtraction" onclick="addValue(this)">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="zero" onclick="addValue(this)">0</button></td>
+                <td><button id="decimal" onclick="decimal()">.</button></td>
+                <td><button id="equals" onclick="equals()">=</button></td>
+                <td><button id="addition" onclick="addValue(this)">+</button></td>
+              
+            </tr>
+        </table> 
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
